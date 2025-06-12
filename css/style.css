@@ -1,0 +1,48 @@
+.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  #taskInput, #addBtn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    word-break: break-word;
+  }
+}
+
+
+li {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+li.added {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
