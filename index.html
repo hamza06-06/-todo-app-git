@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ToDo App</title>
+</head>
+<body>
+  <h1>Ma ToDo App</h1>
+  <input type="text" id="taskInput" placeholder="Ajouter une nouvelle tâche" />
+  <button id="addBtn">Ajouter</button>
+      <ul id="taskList"></ul>
+      <p id="emptyMsg">Aucune tâche pour le moment.</p>
+
+      <div id="filters">
+  <button onclick="filterTasks('all')">Toutes</button>
+  <button onclick="filterTasks('done')">Terminées</button>
+  <button onclick="filterTasks('todo')">À faire</button>
+</div>
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
