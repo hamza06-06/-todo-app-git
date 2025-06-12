@@ -1,0 +1,27 @@
+.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  #taskInput, #addBtn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    word-break: break-word;
+  }
+}
+
