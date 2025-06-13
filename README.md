@@ -35,6 +35,7 @@ Il met en œuvre les bonnes pratiques Git : Git Flow, commits signés, issues, b
 - CSS3
 - JavaScript ES6
 - Git + GitHub
+- ESLint (vérification qualité JS)
 
 ---
 
@@ -48,6 +49,15 @@ Il met en œuvre les bonnes pratiques Git : Git Flow, commits signés, issues, b
 ┣ index.html
 ┗ README.md
 
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/hamza06-06/-todo-app-git.git
+cd -todo-app-git
+code .
 
 ---
 
