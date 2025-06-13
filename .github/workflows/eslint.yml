@@ -2,25 +2,23 @@ name: Linter JS avec ESLint
 
 on:
   push:
-    branches:
-      - develop
-  pull_request:
+    branches: [ develop ]
 
 jobs:
   eslint:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Cloner le dépôt
+      - name: Récupération du code
         uses: actions/checkout@v3
 
-      - name: 📦 Installer Node.js
+      - name: Utiliser Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
-      - name: 📦 Installer les dépendances
+      - name: Installer les dépendances
         run: npm install
 
-      - name: 🔍 Lancer ESLint
+      - name: Lancer ESLint
         run: npx eslint js/script.js
