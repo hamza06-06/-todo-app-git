@@ -69,3 +69,10 @@ function filterTasks(type) {
   });
 }
 
+function updateEmptyMsg() {
+  const list = document.getElementById('taskList');
+  const msg = document.getElementById('emptyMsg');
+  msg.style.display = list.children.length === 0 ? 'block' : 'none';
+}
+
+
