@@ -68,6 +68,8 @@ function filterTasks(type) {
     }
   });
 }
+window.filterTasks = filterTasks;
+
 
 function updateEmptyMsg() {
   const list = document.getElementById('taskList');
